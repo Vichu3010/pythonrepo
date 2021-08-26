@@ -2,11 +2,18 @@
 
 <head>
     <link rel="stylesheet"  type="text/css" href="{% static 'style/main.css' %}">
-    <title>Customers Details</title>
+    <title>Customers</title>
 </head>
 <body>
 {% block content %}
-<div class="screen-header">Customers</div>
+<div class="header-container">
+  <div class="header">Customers Details</div>
+  <div style="margin: 0px 0px 0px auto;">
+    <div>
+    <button  type="button" class="button" onclick="window.location.href='/';">Back</button>
+<!--	<button  type="button" class="button" onclick="window.location.href='products';">Products</button>-->
+    </div></div>
+</div>
 <div class="container">
 	<table>
 		<thead>

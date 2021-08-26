@@ -1,0 +1,36 @@
+.display-flex{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.header{
+    font-size: 30px;
+    color:Black;
+    font-family: sans-serif;
+    margin: 10px 10px 10px 10px;
+}
+
+.header-container{
+    display:flex;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+ }
+
+
+.button{
+    padding: 15px;
+    width: 100px;
+    border:5px;
+    border-radius:25px;
+    font-size:15px;
+    font-family:sans-serif;
+    margin:5px;
+    opacity: 0.6;
+    transition: 0.3s;
+ }
+
+.button:hover{
+    opacity:1;
+    background-color:#9966ff;
+    color:white;
+}

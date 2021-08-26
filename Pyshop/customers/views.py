@@ -8,9 +8,11 @@ def customers(request):
     return render(request, 'customers.html',
                   {'customers': customer})
 
-
-def new(request):
-    return HttpResponse('New project')
+#
+# def products(request):
+#     return render(request, 'index.html',
+#                   {'products': products})
+#
 
 
 

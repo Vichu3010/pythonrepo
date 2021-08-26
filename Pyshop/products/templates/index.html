@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
 
+<html>
+
+<body>
 {% block content %}
-    <h1>Products</h1>
-     <div class="row">
+<!--    <h1>Products</h1>-->
+<!--     <button  type="button" class="button" onclick="window.location.href='/';">Back</button>-->
+<div class="header-container">
+  <div class="header">Products</div>
+  <div style="margin: 0px 0px 0px auto;">
+    <div>
+    <button  type="button" class="button" onclick="window.location.href='/';">Back</button>
+    </div></div>
+</div>
+<div class="card">
+      <div class="row">
         {% for product in products%}
           <div class="col">
         <div class="card" style="width: 18rem;">
@@ -10,10 +22,13 @@
             <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.price }}</p>
-                <a href="#" class="btn btn-primary">Add to Cart </a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
             </div>
         </div>
     </div>
          {% endfor %}
     </div>
+</div>
 {% endblock %}
+</body>
+</html>
